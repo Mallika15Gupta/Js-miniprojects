@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Calculator</title>
+	<style>
+#clear
+{
+	width:100px;
+}
+.formstyle
+{
+	width:120px;
+	height:261px;
+	margin:auto;
+	border:3px solid black;
+	padding: 10px;
+	padding-left:30px;
+	padding-right:15px;
+	background-color: rgba(40,0,120,0.3);
+}
+
+#design
+{
+	width:100px;
+}
+
+input
+{
+	width:32px;
+	background-color:turquoise;
+}
+
+	</style>
+</head>
+<body>
+<div class="formstyle">
+	<form name="Form">
+		
+		<input type="text" name="answer" id="design">
+		 <br></br>
+
+		<input type="button" value=" 1 " onclick="Form.answer.value += '1'" >
+		<input type="button" value=" 2 " onclick="Form.answer.value += '2'" >
+		<input type="button" value=" 3 " onclick="Form.answer.value += '3'" > 
+		<br></br>
+
+		<input type="button" value=" 4 " onclick="Form.answer.value += '4'" >
+		<input type="button" value=" 5 " onclick="Form.answer.value += '5'" >
+		<input type="button" value=" 6 " onclick="Form.answer.value += '6'" >
+		<br></br>
+
+		<input type="button" value=" 7 " onclick="Form.answer.value += '7'" >
+		<input type="button" value=" 8 " onclick="Form.answer.value += '8'" >
+		<input type="button" value=" 9 " onclick="Form.answer.value += '9'" >
+		<br> </br>
+
+		<input type="button" value=" + " onclick="Form.answer.value += '+'" >
+		<input type="button" value="  - " onclick="Form.answer.value += '-'" >
+		<input type="button" value=" * " onclick="Form.answer.value += '*'" >
+		<br> </br>
+
+		<input type="button" value="  / " onclick="Form.answer.value += '/'" >
+		<input type="button" value=" 0 " onclick="Form.answer.value += '0'" >
+		<input type="button" value=" = " onclick="Form.answer.value = eval(Form.answer.value)" >
+		<br> </br>
+		<input type="button" value=" Clear " onclick="Form.answer.value = ''" id="clear">
+
+
+
+
+
+</body>
+</html>
