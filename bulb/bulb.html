@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Light it up</title>
+</head>
+<body style="background-color:black;">
+    <nav></nav>
+
+    <section>
+        <div class="container header"> 
+            <h1 id="text" style= "color:Yellow;"> Light it up...</h1>
+        </div>
+
+        <div class="body">
+            <div class="container bulb">
+                <h5>Click the button to switch ON or switch OFF the bulb .</h5>
+                <div id="bulb">
+                    <img id="bulb_img" src="images/off.jpg" >
+                </div>
+            </div>
+            <div class="button">
+                <button id="bluboff" onclick=switch_status(1)>Switch OFF</button>
+                <button id="blubon" onclick=switch_status(0)>Switch ON</button>
+            </div> 
+        </div>
+
+    </section>
+    <div class="footer">
+    
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>

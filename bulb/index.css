@@ -1,0 +1,57 @@
+*{
+    background-color: black;
+    color: coral;
+    font-family: cursive;
+    
+}
+
+nav{
+    padding: 3em 3em;
+    background-color: rgb(20,30,180);
+}
+h1{
+    font-size: xx-large;
+    text-transform: uppercase;
+    padding: 2em 0em;
+}
+h5{
+    padding-left: 1em;
+    font-size: larger;
+    font-weight: 300;
+    border-top: 1px;
+   
+}
+.container{
+ 
+}
+
+section{
+    align-content: inherit;
+    margin: 5% 10% 10% 30%;
+}
+.header
+{
+    
+}
+button{
+    padding: 2em 3em;
+    margin: 1em 3em;
+    border: bold;
+    background-color: magenta;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+.button{
+
+
+}
+.footer{
+    padding: 3em 3em;
+    background-color: rgb(20,30,180);
+}
+ #bulb_img{
+     align-content: center;
+    
+ }
