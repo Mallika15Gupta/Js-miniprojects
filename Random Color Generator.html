@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Random Color Generator</title>
+    <style>
+      .card{
+         background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+box-shadow: [20] [-20] [10] [10] [silver];
+margin-top: 265px;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <h2><i><b><center> Hello, </center></b></i> </h2>
+   <h3><b><i><center>Click the button and see which color appears!!</center></i></b></h3>
+    <center>
+    <div class="card" style="width: 15rem;">
+  <div class="card-body">
+    <h5 id="text" class="card-title">#FFFFFF</h5>
+    <a onclick="randomcolor();" class="btn btn-primary">Click here</a>
+  </div>
+</div>
+</center>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+    <script>
+function randomcolor()
+{
+  var letters="0123456789ABCDEF";
+  var color="#"
+  for(var i=0;i<6;i++)
+  {
+    color+=letters[Math.floor(Math.random()*16)]
+  }
+  document.body.style.backgroundColor=color;
+  var text = document.getElementById("text");
+  text.innerHTML=color;
+}
+
+
+    </script>
+  </body>
+</html>
